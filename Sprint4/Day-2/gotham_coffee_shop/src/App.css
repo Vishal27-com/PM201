@@ -1,0 +1,8 @@
+#root {
+ margin:0px;
+ padding: 0px;
+ font-family: sans;
+ font-weight: 600;
+ background:linear-gradient(to right,pink,rgb(10, 255, 206),rgb(0, 217, 255))
+ /* background: rgb(14, 255, 219); */
+}
