@@ -1,8 +1,11 @@
 import React from 'react'
+import {Box,Center} from '@chakra-ui/react'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <Box h='70vh'>
+    <Center>Contact Page</Center>
+    </Box>
   )
 }
 

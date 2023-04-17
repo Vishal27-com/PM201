@@ -1,9 +1,8 @@
-import { Box, Center, Flex, Img, Text } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import { Box, Center,  Img, Text } from "@chakra-ui/react";
 
 const Footer = () => {
   return (
-    <Box position="fixed" w="100%" bottom="0px" p="10px" >
+    <Box w="100%" bottom="0px" p="10px" >
       <Center gap="20px" mb="10px">
         <a href="https://www.linkedin.com/in/vishal-gupta-573335237">
           <Img

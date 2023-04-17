@@ -1,8 +1,10 @@
-import React from 'react'
+import {Box,Center} from '@chakra-ui/react'
 
 const Login = () => {
   return (
-    <div>Login</div>
+    <Box h='70vh'>
+    <Center>Login Page</Center>
+    </Box>
   )
 }
 
