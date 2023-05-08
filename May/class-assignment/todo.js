@@ -16,10 +16,10 @@ class Todos{
         let todo=new Todo(title);
         this.#task.push(todo)
     }
-    deleteTodo(id){
+    deleteItem(id){
        this.#task=this.#task.filter((item,ind)=>ind!==id)
     }
-    updateTodo(id){
+    toggleStatus(id){
         this.#task[id].status=!this.#task[id].status
     }
 }
@@ -43,7 +43,7 @@ function display(todos_arr){
     status_but.innerText=item.status?"Done":"Pending";
     status_but.style.backgroundColor=item.status?"green":"yellow";
     status_but.addEventListener("click",()=>{
-        t1.updateTodo(ind)
+        t1.toggleStatus(ind)
         let todolist=t1.todos;
         display(todolist);
     })
@@ -51,7 +51,7 @@ function display(todos_arr){
     delete_but.innerText="X"
     delete_but.style.backgroundColor="red";
     delete_but.addEventListener("click",()=>{
-        t1.deleteTodo(ind)
+        t1.deleteItem(ind)
         let todolist=t1.todos;
         display(todolist);
     })
