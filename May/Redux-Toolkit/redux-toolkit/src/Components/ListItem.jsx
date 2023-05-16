@@ -1,16 +1,22 @@
-import { Box, Flex } from '@chakra-ui/react'
-import React, { useState } from 'react'
+import { Flex } from '@chakra-ui/react'
+import React, { useState,useEffect } from 'react'
 import Item from './Item'
+import { useSelector } from 'react-redux'
 
 const ListItem = () => {
-    const [data,setData]=useState([])
+    const state=useSelector(store=>store.todos);
+    
   return (
     <Flex direction='column' gap='10px' align='center'>
-        <Item />
-        <Item />
 {
-    data.map((item)=>
-    <Item />
+    state.map((item,ind)=>
+    <Item 
+    key={ind}
+    id={ind}
+    title={item.title}
+    desc={item.desc}
+    status={item.status} 
+    />
     )
 }
     </Flex>
