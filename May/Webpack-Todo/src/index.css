@@ -1,0 +1,30 @@
+#root{
+   padding:0px;
+   margin:0px;
+   font-family: sans;
+   font-weight: 600;
+}
+.main_div{
+    width: 300px;
+    margin: auto;
+}
+.input{
+    width: 150px;
+    border: 1px solid lightgray;
+    padding: 7px 15px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.addBut{
+    margin-left: 10px;
+    border: 0;
+    padding: 7px 15px;
+    font-size: 18px;
+    border-radius: 15px;
+    background: rgb(115, 244, 16);
+    cursor: pointer;
+}
+
+
+
+
