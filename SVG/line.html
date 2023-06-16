@@ -4,21 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Line</title>
 </head>
 <body>
 <!--  
 viewBox= 'x y width height'
 width,height big image small
 stroke= 'color name'
+stroke-width= 'width of stroke'
+stroke-opacity='opacity of stroke'
+stroke-linecap='by default butt another is square'
+stroke-linejoin='miter(by default),round,bevel at line joining point'
+stroke-dasharray='dash , gap '
+stroke-dashoffset='to move dash'
+fill='color name'
+fill-opacity='opacity'
+fill-rule='nonzero(by default) , evenodd(transparent odd color)'
+g->group element
+use-> use one element again and again 
+<use xlink:href='#idofelem' x=''y=''>
+<defs>->to hide the element
+<textpath xlink:href='#idofshape'>
         Line element
 x1,y1 - starting point 
 x2,y2 - ending point
 -->
 <h1>Line Element</h1>
 <div class='cont'>
-<svg viewBox='0 0 1000 1000'>
+<svg viewBox='0 0 500 500'>
+  <g>
+    <line x1='10' y1='10' x2='100' y2='10' stroke='lightgrey'></line>
+    <line x1='10' y1='10' x2='10' y2='100' stroke='lightgrey'></line>
+    <line x1='10' y1='20' x2='100' y2='20' stroke='lightgrey'></line>
+    <line x1='20' y1='10' x2='20' y2='100' stroke='lightgrey'></line>
+    <line x1='10' y1='30' x2='100' y2='30' stroke='lightgrey'></line>
+    <line x1='30' y1='10' x2='30' y2='100' stroke='lightgrey'></line>
+    <line x1='10' y1='40' x2='100' y2='40' stroke='lightgrey'></line>
+    <line x1='40' y1='10' x2='40' y2='100' stroke='lightgrey'></line>
+    <line x1='10' y1='50' x2='100' y2='50' stroke='lightgrey'></line>
+    <line x1='50' y1='10' x2='50' y2='100' stroke='lightgrey'></line>
+    <line x1='10' y1='60' x2='100' y2='60' stroke='lightgrey'></line>
+    <line x1='60' y1='10' x2='60' y2='100' stroke='lightgrey'></line>
+    <line x1='10' y1='70' x2='100' y2='70' stroke='lightgrey'></line>
+    <line x1='70' y1='10' x2='70' y2='100' stroke='lightgrey'></line>
+    <line x1='10' y1='80' x2='100' y2='80' stroke='lightgrey'></line>
+    <line x1='80' y1='10' x2='80' y2='100' stroke='lightgrey'></line>
+    <line x1='10' y1='90' x2='100' y2='90' stroke='lightgrey'></line>
+    <line x1='90' y1='10' x2='90' y2='100' stroke='lightgrey'></line>
+    <line x1='10' y1='100' x2='100' y2='100' stroke='lightgrey'></line>
+    <line x1='100' y1='10' x2='100' y2='100' stroke='lightgrey'></line>
+
+  </g>
   <line x1='10' y1='20' x2='10' y2='60' stroke='red'></line>
+  <line x1='10' y1='20' x2='60' y2='20' stroke='green'></line>
+  <line x1='10' y1='60' x2='60' y2='60' stroke='blue'></line>
+  <line x1='60' y1='20' x2='60' y2='60' stroke='black'></line>
 </svg>
 </div>
 </body>

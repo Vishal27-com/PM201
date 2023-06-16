@@ -37,6 +37,7 @@ var union : string | number =4
 type MyType={name:string,age:number}
 // Interfaces
 // used to define type to object
+import "./decorators";
 interface User{
     name:string;
     age:number;

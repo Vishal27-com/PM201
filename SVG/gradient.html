@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        .rect{
+            fill:url(#geffect);
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    linearGradient
+    radialGradient
+     -->
+     <h1>Gradient</h1>
+     <svg>
+         <defs>
+    <!-- <linearGradient id="geffect">
+    <stop offset="0%" stop-color="green" />
+    <stop offset="50%" stop-color="orange" />
+    </linearGradient> -->
+    <radialGradient id="geffect">
+    <stop offset="30%" stop-color="green" />
+    <stop offset="20%" stop-color="orange" />
+    </radialGradient>
+         </defs>
+    <rect class="rect" x="10" y="20" width="50" height="60"  ></rect>
+     </svg>
+</body>
+</html>

@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 // String
 var hero = "Ironman";
 // Number
@@ -31,9 +33,15 @@ function addressIsOptional(user) {
     console.log(user.name, user.age);
 }
 // union types
-// Type Aliases
-// Type assertions
-// Literal types
-// literal inference
-// null and undefined
-// enums
+var union = 4;
+// Interfaces
+// used to define type to object
+require("./decorators");
+// Function type expression
+function expression(cb) {
+    cb("Hello world");
+}
+function cb(s) {
+    console.log(s);
+}
+expression(cb);
